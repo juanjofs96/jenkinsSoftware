@@ -79,6 +79,7 @@ tasks.withType(com.github.spotbugs.SpotBugsTask) {
 
 apply plugin:'checkstyle'
 checkstyle {
+    ignoreFailures = true
     toolVersion '7.8.1'
     configFile file("config/checkstyle/checkstyle.xml")
 }
